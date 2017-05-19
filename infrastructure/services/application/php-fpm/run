@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec php-fpm -y /etc/php5/php-fpm.conf -O

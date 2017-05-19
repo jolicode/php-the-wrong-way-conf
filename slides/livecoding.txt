@@ -1,0 +1,30 @@
+Déroulé Live Coding
+
+-> 3 pages - Splash screen + liste des blog post + détails d'un blogpost
+-> Func.generic.php déjà présent
+
+-> Début de code
+
+-> Virer les notices, warnings, errors
+
+-> ### Protips "SAUVEGARDE"
+
+-> 'short_open_tag'
+-> Explication PHP-FIG +-04
+
+-> Problème d'accès aux variables
+-> ### Protips Récupérer les globals comme au bon vieux temps !
+
+-> Ajout de CSS
+-> Problème de droit protips CHMOD
+
+-> Problème de nommage ? queryXML() && queryXML2()
+
+-> Admin
+-> Login : JS Non-secure
+
+-> Warning timezone + date_default_timezone_set
+
+-> 'allow_url_include' - include du compteur
+
+

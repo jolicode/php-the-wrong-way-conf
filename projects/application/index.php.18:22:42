@@ -1,0 +1,26 @@
+<?php
+
+//error_reporting(0);
+ini_set("short_open_tag", true);
+
+require('fonctions.1.php');
+?>
+
+<?php
+html_En_Tete();
+?>
+
+<?php
+switch ($_GET["page"]) {
+    case "post":
+        echo "Coucou mon post !";
+        break;
+    default:
+        echo html_acceuil();
+        break;
+}
+?>
+
+<?php
+htmlmonFooter();
+?>

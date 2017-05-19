@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Function to update the fpm configuration to make the service environment variables available
+function set_env_variable() {
+    if [ -z "$2" ]; then
+        return
+    fi
+
+    # Add variable
+    echo "fastcgi_param $1 $2;" >> /etc/nginx/environments
+}
+
+if [ -e /etc/nginx/environments ]
+then
+    rm /etc/nginx/environments
+fi
+
+touch /etc/nginx/environments
+
+exec nginx

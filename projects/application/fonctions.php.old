@@ -1,0 +1,18 @@
+<?php
+
+//error_reporting(0);
+ini_set("short_open_tag", true);
+
+function html_En_Tete(){
+    echo "<HTML><HEAD><TITLE>Mon Blog Perso</TITLE></HEAD><BODY>HEADER DU BLOG<BR><BR><BR>";
+}
+
+
+function html_acceuil() {
+    echo "<P>COUCOU mon blog est ouvert ! héhéhéhéhé !</P>";
+}
+
+function htmlmonFooter()
+{
+    echo "</HTML>";
+}

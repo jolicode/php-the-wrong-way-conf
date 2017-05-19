@@ -1,0 +1,18 @@
+application:
+    build: ../services/application
+    volumes:
+        - ../../projects/application:/var/www
+        - ../../projects/phpmyadmin:/var/phpmyadmin
+    links:
+        - database
+    ports:
+        - "80:80"
+
+database:
+    build: ../services/database
+    environment:
+        MYSQL_ROOT_PASSWORD: 'poop'
+    volumes:
+        - shitty_project_database_data:/var/lib/mysql
+    ports:
+        - "3306:3306"
